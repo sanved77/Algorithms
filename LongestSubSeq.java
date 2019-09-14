@@ -4,6 +4,8 @@ class LongestSubSeq{
         
         String str1,str2;
         str1 = "ABAC";
+        // str1 = "ABCDGH";
+        // str2 = "AEDFHR";
         str2 = "BDAB";
 
         int n = str1.length();
@@ -24,8 +26,6 @@ class LongestSubSeq{
             for(int j = 1; j <= m; j++){
 
                 if(str2.charAt(i-1) == str1.charAt(j-1)){
-                    System.out.println("mat[" + i + "][" + j + "]");
-                    System.out.println("str2." + (i-1) + " - " + str2.charAt(i-1) + " | str1." + (j-1) + " - " + str1.charAt(j-1));
                     arrows[i][j] = 'D';
                     mat[i][j] = mat[i-1][j-1] + 1;
                 }else{
@@ -61,6 +61,44 @@ class LongestSubSeq{
                 else System.out.print(arrows[i][j] + " |");
             }
             System.out.println("");
+        }
+
+        System.out.println("---- Longest Sequence ----");
+
+        findElements(n, m, arrows, str1);
+
+
+        int len = mat[n][m];
+        int count = 0;
+        for(int k = 0 ; k <= n; k++){
+            for(int l = 0; l <= m; l++){
+                if(mat[k][l] == len && arrows[k][l] == 'D'){
+                    System.out.println("---- Longest Sub sequence no. "+ (++count) + " ----");
+                    findElements(k, l, arrows, str1);
+                }
+            }
+        }
+    }
+
+    private static void findElements(int n, int m, char arrows[][], String str1){
+        int i = n, j = m;
+        char stack[] = new char[str1.length()];
+        int stackPtr = -1;
+        while(true){
+            if(arrows[i][j] == '\u0000') break;
+            else if(arrows[i][j] == 'D'){
+                stack[++stackPtr] = str1.charAt(j-1);
+                i--;
+                j--;
+            }else if(arrows[i][j] == 'L'){
+                j--;
+            }else if(arrows[i][j] == 'U'){
+                i--;
+            }
+        }
+
+        while(stackPtr != -1){
+            System.out.println("- " + stack[stackPtr--]);
         }
     }
 
