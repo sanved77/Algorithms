@@ -8,6 +8,9 @@ class HouseRob {
         - Given - A set of houses and the reward for stealing them 
         - To find the maximum reward one can get by stealing from multiple houses which aren't next to each other. 
 
+        The trick here is to find if robbing the previous house is better than robbing the current house alongwith the house before the previous house
+        That is stored on table which is used for lookup later
+
         Example - 
 
         nums = {10, 12, 16, 13, 3, 26, 7}

@@ -5,20 +5,36 @@ import java.lang.Comparable;
 class PairChain {
 
     public static void main(String[] args) {
+
+        /*
+
+        Longest Pair Chain problem
+
+        Given a (a,b) and (c,d) pair, it tries to find a chain of pairs which respects (a < b < c < d). 
+
+        Here the algorithm checks the current pair and then compares it with the pair which was taken previously and compiles a list
+
+        */
         
         ArrayList<Pair> pairs = new ArrayList<>();
 
         pairs.add(new Pair(1,2));
         pairs.add(new Pair(8,10));
         pairs.add(new Pair(5,6));
-        pairs.add(new Pair(2,2));
+        pairs.add(new Pair(2,3));
         pairs.add(new Pair(7,8));
         pairs.add(new Pair(17,18));
         pairs.add(new Pair(19,20));
         pairs.add(new Pair(21,22));
-        pairs.add(new Pair(3,4));
-
+        pairs.add(new Pair(4,5));
+        // pairs.add(new Pair(1,2));
+        // pairs.add(new Pair(2,3));
+        // pairs.add(new Pair(3,5));
+        // pairs.add(new Pair(6,7));
+        // pairs.add(new Pair(8,9));
+        
         int R[] = new int[pairs.size()];
+        int j = 0;
 
         Collections.sort(pairs);
        
@@ -29,8 +45,9 @@ class PairChain {
         R[0] = 1;
 
         for(int i = 1; i < pairs.size(); i++){
-            if(pairs.get(i).first > pairs.get(i-1).second){
+            if(pairs.get(i).first > pairs.get(j).second){
                 R[i] = R[i-1] + 1;
+                j = i;
             }else{
                 R[i] = R[i-1];
             }

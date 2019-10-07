@@ -3,6 +3,13 @@ class SellStock {
     public static void main(String ag[]){
 
         // int[] prices = {7,6,5,1,3,10,4};
+
+        /*
+
+        At every iteration, it checks if the value is the minimum amongst the array,
+        then it checks if selling the stock now would be profitable than the previous value
+
+        */
         int[] prices = {7,1,5,3,6,4};
         int R[] = new int[prices.length];
 
