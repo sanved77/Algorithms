@@ -12,7 +12,8 @@ class PairChain {
 
         Given a (a,b) and (c,d) pair, it tries to find a chain of pairs which respects (a < b < c < d). 
 
-        Here the algorithm checks the current pair and then compares it with the pair which was taken previously and compiles a list
+        Here the algorithm checks the current pair and then compares it with the pair which was put in the bucket previously 
+        Thus it ends up appending all the pairs which should be in the list 
 
         */
         
@@ -46,7 +47,7 @@ class PairChain {
 
         for(int i = 1; i < pairs.size(); i++){
             if(pairs.get(i).first > pairs.get(j).second){
-                R[i] = R[i-1] + 1;
+                R[i] = R[j] + 1;
                 j = i;
             }else{
                 R[i] = R[i-1];
