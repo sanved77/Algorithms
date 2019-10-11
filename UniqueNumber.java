@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class UniqueNumber {
 
     /**
@@ -16,19 +18,51 @@ class UniqueNumber {
      * And the unique number has nothing to nullify itself with and hence it remains as it
      * 
      * Runs in O(n) hence.
+     * 
+     * The other implemention uses a Hashtable with Counting Sort. 
+     * The number is the key for the hast table and every time a number is found, the hash table entry is incremented.
+     * The entire array is traversed and the hash table is filled in a manner of a set. 
+     * Once that is done, the hashtable is looked up using all the elements from the array and the one with the value is chosen.
      */
 
+    static int arr[] = {2,1,5,2,7,1,9,8,7,8,9};
+
     public static void main(String[] args) {
-        
-        int arr[] = {2,1,5,2,7,1,9,8,7,8,9};
+
+        System.out.println("Unique Number - " + findUniqueXOR());
+        System.out.println("Unique Number - " + findUniqueHash());
+
+    }
+
+    public static int findUniqueXOR(){
         int xorres = arr[0] ^ arr[1];
 
         for(int i = 2 ; i < arr.length; i++){
             xorres = xorres ^ arr[i];
         }
 
-        System.out.println("Unique Number - " + xorres);
+        return xorres;
+    } 
 
+    public static int findUniqueHash(){
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for(int a : arr){
+            if(map.get(a) == null){
+                map.put(a, 1);
+            }else{
+                map.put(a, map.get(a) + 1);
+            }
+        }
+
+        for(int a : arr){
+            if(map.get(a) == 1){
+                return a;
+            }
+        }
+
+        return 999;
     }
 
 }
