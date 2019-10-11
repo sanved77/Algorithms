@@ -38,15 +38,6 @@ public class LinkedList {
         if(head.num == num){
             root = head.next;
         }
-        // if(head.next == null){
-        //     if(head.num == num){
-        //         root = null;
-        //         System.out.println("Element at root deleted");
-        //     }else{
-        //         System.out.println("Nothing to delete");
-        //         return;
-        //     }
-        // }
         Node prev = head;
         head = head.next;
         while(head.next != null){
