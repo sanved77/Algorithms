@@ -1,5 +1,12 @@
 class QuickSort{
 
+    /**
+     * QuickSort
+     * Take the mid element as pivot and then compare every other number to it 
+     * All the number lower than the pivot go to the left of the pivot and the larger go to the right.
+     * Keep the pivot as it is and do the same procedure on the newly formed two arrays.
+     */
+
     static int arr[] = {14, 5, 87, 12, 7, 2, 26, 9, 3};
     public static void main(String[] args) {
         qsort(0, arr.length - 1);
