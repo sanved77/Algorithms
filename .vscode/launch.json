@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MergeSort",
+            "request": "launch",
+            "mainClass": "MergeSort"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - QuickSort",
             "request": "launch",
             "mainClass": "QuickSort",
