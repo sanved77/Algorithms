@@ -17,13 +17,20 @@ class CountSort {
             buckets[a]++;
         }
         
+        int[] sortedArr = new int[arr.length];
+        int arrPtr = 0;
+
         for(int i = 0; i < max+1; i++){
             if(buckets[i] != 0){
                 while(buckets[i] != 0){
-                    System.out.print("- " + i);
+                    sortedArr[arrPtr++] = i; 
                     buckets[i]--;
                 }
             }
+        }
+
+        for(int a : sortedArr){
+            System.out.print(" - " + a);
         }
 
         System.out.println();
