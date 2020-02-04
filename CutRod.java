@@ -10,7 +10,7 @@ public class CutRod {
 
         - Example - 
 
-        For every iteration it checks to see what is the maximum. Selling a length of (i) or a selling a length of 1 and length of (i-2) 
+        For every iteration it checks to see what is the maximum. Selling a length of (i) or a selling a length of 1 and length of (i-1) 
         and then selling a length of 2 and length of (i-2).
 
         So at length of 4 it basically checks if selling rod with length 4 is better than selling rod of length 1 and rod of length 3 
