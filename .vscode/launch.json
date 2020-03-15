@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CandyCrush1D",
+            "request": "launch",
+            "mainClass": "CandyCrush1D",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - RadixSort",
             "request": "launch",
             "mainClass": "RadixSort",
