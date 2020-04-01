@@ -2,9 +2,9 @@
 
 ## Basic Skeleton
 
-1. Write down the requirements of the system, what is should do and what are the operations expected and design APIs
+1. Write down the requirements of the system, i.e. what it should do and what are the operations expected and design APIs
 2. Measure the capacity of the system by calculating the total resources needed.
-3. Based no the above data, decide what would be the ideal data storage practice
+3. Based on the above data, decide what would be the ideal data storage practice
 4. Design the system one by one while keeping the services in mind
 5. Try to optimize the services by creating microservices
 6. Try data optimization using Sharding/Caching or something similar
@@ -12,6 +12,7 @@
 
 ## Concepts
 [Database Sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding)
+
 [Load Balancers](https://www.nginx.com/resources/glossary/load-balancing/)
 
 
