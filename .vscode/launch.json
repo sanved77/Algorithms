@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TopologicalSort",
+            "request": "launch",
+            "mainClass": "TopologicalSort",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MinPath2D",
+            "request": "launch",
+            "mainClass": "MinPath2D",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CandyCrush1D",
             "request": "launch",
             "mainClass": "CandyCrush1D",
