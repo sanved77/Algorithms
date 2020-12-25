@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GridTraveler",
+            "request": "launch",
+            "mainClass": "GridTraveler"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MultiList",
             "request": "launch",
             "mainClass": "MultiList",
