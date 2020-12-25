@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HowSum",
+            "request": "launch",
+            "mainClass": "HowSum",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch BestSum",
+            "request": "launch",
+            "mainClass": "BestSum",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinStepsToN",
+            "request": "launch",
+            "mainClass": "MinStepsToN",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch HasSum",
+            "request": "launch",
+            "mainClass": "HasSum",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
             "name": "Launch CanSum",
             "request": "launch",
             "mainClass": "CanSum",

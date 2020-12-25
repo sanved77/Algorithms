@@ -9,10 +9,10 @@ public class CanSum {
 
     public static boolean canSum(int[] nums, int target, HashSet<Integer> map){
         if(target == 0) return true;
+        if(target < 0) return false;
         if(map.contains(target)) return true;
 
         for(int i = 0; i < nums.length; i++){
-            if(target < nums[i]) break;
             if(canSum(nums, target - nums[i], map)){
                 map.add(target);
                 return true;
