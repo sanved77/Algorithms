@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CanSum",
+            "request": "launch",
+            "mainClass": "CanSum",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
             "name": "Launch GridTraveler",
             "request": "launch",
             "mainClass": "GridTraveler"
