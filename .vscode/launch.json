@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Fib",
+            "request": "launch",
+            "mainClass": "Fib",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
             "name": "Launch AllConstructWord",
             "request": "launch",
             "mainClass": "AllConstructWord",
