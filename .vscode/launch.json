@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BestSumTab",
+            "request": "launch",
+            "mainClass": "BestSumTab",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch HowSumTab",
+            "request": "launch",
+            "mainClass": "HowSumTab",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch CanSumTab",
+            "request": "launch",
+            "mainClass": "CanSumTab",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
             "name": "Launch Fib",
             "request": "launch",
             "mainClass": "Fib",
