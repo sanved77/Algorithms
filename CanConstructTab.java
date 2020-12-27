@@ -28,6 +28,6 @@ public class CanConstructTab {
     }
 
     public static void test(String word, String[] list){
-        System.out.println(word + " - " + canConstruct(word, list));
+        System.out.println(word + "  - " + canConstruct(word, list));
     }
 }

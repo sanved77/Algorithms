@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AllConstructTab",
+            "request": "launch",
+            "mainClass": "AllConstructTab",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch CanConstructTab",
+            "request": "launch",
+            "mainClass": "CanConstructTab",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
             "name": "Launch BestSumTab",
             "request": "launch",
             "mainClass": "BestSumTab",
