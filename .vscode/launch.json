@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ClimbingStairs",
+            "request": "launch",
+            "mainClass": "ClimbingStairs",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClimbingStairsK",
+            "request": "launch",
+            "mainClass": "ClimbingStairsK",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
             "name": "Launch AllConstructTab",
             "request": "launch",
             "mainClass": "AllConstructTab",
