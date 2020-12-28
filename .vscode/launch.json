@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HouseRob",
+            "request": "launch",
+            "mainClass": "HouseRob",
+            "projectName": "Algorithms_fc54a3ad"
+        },
+        {
+            "type": "java",
             "name": "Launch CutRod",
             "request": "launch",
             "mainClass": "CutRod",
