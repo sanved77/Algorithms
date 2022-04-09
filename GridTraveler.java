@@ -4,6 +4,7 @@ class GridTraveler {
         System.out.println("2,3 - " + gridTraveler(2,3));
         System.out.println("4,3 - " + gridTraveler(4,3));
         System.out.println("3,4 - " + gridTraveler(3,4));
+        System.out.println("4,5 - " + gridTraveler(4,5));
         System.out.println("18, 18 - " + gridTraveler(18,18));
     }
 
@@ -32,3 +33,8 @@ class GridTraveler {
         return (gridTravelerBranched(m-1, n) + gridTravelerBranched(m, n-1));
     }
 }
+
+/**
+ * Time complexity - O(mn)
+ * Space complexity - O(mn)
+ */

@@ -4,7 +4,7 @@ public class CanConstructTab {
         test("abcdefab", new String[]{"ab", "abc", "cd", "def", "abcd"});
         test("abcdefe", new String[]{"ab", "abc", "cd", "def", "abcd"});
         test("enterapotentpot", new String[]{"a", "p", "ent", "enter", "ot", "o", "t"});
-        test("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", new String[]{"e","ee","eee","eeee","eeeee",});
+        test("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", new String[]{"e","ee","eee","eeee","eeeee"});
     }
 
     public static boolean canConstruct(String word, String[] list){
@@ -31,3 +31,9 @@ public class CanConstructTab {
         System.out.println(word + "  - " + canConstruct(word, list));
     }
 }
+
+/**
+ * word.length = n ; nums.length = m
+ * Time complexity - O(nm)
+ * Space complexity - O(n)
+ */

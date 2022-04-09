@@ -15,7 +15,10 @@ public class CanSumTab {
 
         for(int i = 1; i <= target; i++){
             for(int num : nums){
-               if((i - num) >= 0 && dp[i-num]) dp[i] = true;
+               if((i - num) >= 0 && dp[i-num]) {
+                   dp[i] = true;
+                   break;
+               }
             }
         }
 
@@ -27,4 +30,10 @@ public class CanSumTab {
     }
 
 }
+
+/**
+ * target = n ; nums.length = m
+ * Time complexity - O(nm)
+ * Space complexity - O(n)
+ */
 

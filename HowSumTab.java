@@ -7,6 +7,7 @@ public class HowSumTab {
         test(new int[]{5,2,3}, 8);
         test(new int[]{7,14}, 300);
         test(new int[]{7,15}, 300);
+        test(new int[]{1}, 5);
     }
 
     public static List<Integer> howSum(int[] nums, int target){
@@ -19,6 +20,7 @@ public class HowSumTab {
                if((i - num) >= 0 && dp[i-num] != null){
                    dp[i] = new ArrayList<>(dp[i-num]);
                    dp[i].add(num);
+                   break;
                }
             }
         }
@@ -37,3 +39,8 @@ public class HowSumTab {
 
 }
 
+/**
+ * target = n ; nums.length = m
+ * Time complexity - O(nm)
+ * Space complexity - O(n^2)
+ */

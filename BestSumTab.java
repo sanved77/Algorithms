@@ -38,3 +38,8 @@ public class BestSumTab {
 
 }
 
+/**
+ * target = n ; nums.length = m
+ * Time complexity - O(nm)
+ * Space complexity - O(n^2)
+ */

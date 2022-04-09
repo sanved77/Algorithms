@@ -22,3 +22,8 @@ public class Fib {
         System.out.println(n + " - " + fib(n));
     }
 }
+
+/**
+ * Time complexity - O(n)
+ * Space complexity - O(n)
+ */
